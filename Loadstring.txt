@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FolTakX/FolTakX-s-Compact-Teleporter-GUI/main/FolTakX's%20Teleporting%20GUI.txt"))()
