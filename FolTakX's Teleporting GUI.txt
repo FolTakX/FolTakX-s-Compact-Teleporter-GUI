@@ -95,11 +95,8 @@ local function CloseGuiScript() -- Close.Script
 	local script = Instance.new('Script', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		if script.Parent.Parent.Visible == true then
 			script.Parent.Parent.Visible = false
-			if script.Parent.Parent.Parent.Open.Visible == false then
-				script.Parent.Parent.Parent.Open.Visible = true
-			end
+			script.Parent.Parent.Parent.Open.Visible = true
 		end
 	end)
 end
@@ -107,11 +104,7 @@ local function OpenGuiScript() -- Open.Script
 	local script = Instance.new('Script', Open)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		if script.Parent.Parent.Frame.Visible == false then
-			script.Parent.Parent.Frame.Visible = true
-			if script.Parent.Visible == true then
-				script.Parent.Visible = false
-			end
-		end
+		script.Parent.Parent.Frame.Visible = true
+		script.Parent.Visible = false
 	end)
 end
