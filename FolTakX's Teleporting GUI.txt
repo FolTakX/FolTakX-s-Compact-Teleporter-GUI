@@ -91,6 +91,7 @@ local function TeleportPlayerScript() -- TeleportUser.Script
 		game.Players.LocalPlayer.Character:MoveTo(game.Workspace:WaitForChild(script.Parent.Parent.Text.Name).Head.Position)
 	end)
 end
+coroutine.wrap(TeleportToPlayerScript)()
 local function CloseGuiScript() -- Close.Script 
 	local script = Instance.new('Script', Close)
 
@@ -100,6 +101,7 @@ local function CloseGuiScript() -- Close.Script
 		end
 	end)
 end
+coroutine.wrap(CloseGuiScript)()
 local function OpenGuiScript() -- Open.Script 
 	local script = Instance.new('Script', Open)
 
@@ -108,3 +110,4 @@ local function OpenGuiScript() -- Open.Script
 		script.Parent.Visible = false
 	end)
 end
+coroutine.wrap(OpenGuiScript)()
