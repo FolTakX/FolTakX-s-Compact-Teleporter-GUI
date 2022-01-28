@@ -9,7 +9,8 @@ local Open = Instance.new("TextButton")
 --Properties:
 
 FolTakXsTeleporterGui.Name = "FolTakXsTeleporterGui"
-FolTakXsTeleporterGui.Parent = game.Players.LocalPlayer.PlayerGui
+FolTakXsTeleporterGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+FolTakXsTeleporterGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = FolTakXsTeleporterGui
 Frame.BackgroundColor3 = Color3.fromRGB(6, 168, 255)
@@ -97,7 +98,6 @@ local function CloseGuiScript() -- Close.Script
 	script.Parent.MouseButton1Click:Connect(function()
 			script.Parent.Parent.Visible = false
 			script.Parent.Parent.Parent.Open.Visible = true
-		end
 	end)
 end
 coroutine.wrap(CloseGuiScript)()
