@@ -95,8 +95,8 @@ local function CloseGuiScript() -- Close.Script
 	local script = Instance.new('Script', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
-			script.Parent.Parent.Visible = false
-			script.Parent.Parent.Parent.Open.Visible = true
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Open.Visible = true
 	end)
 end
 local function OpenGuiScript() -- Open.Script 
