@@ -10,7 +10,6 @@ local Open = Instance.new("TextButton")
 
 FolTakXsTeleporterGui.Name = "FolTakXsTeleporterGui"
 FolTakXsTeleporterGui.Parent = game.Players.LocalPlayer.PlayerGui
-FolTakXsTeleporterGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = FolTakXsTeleporterGui
 Frame.BackgroundColor3 = Color3.fromRGB(6, 168, 255)
