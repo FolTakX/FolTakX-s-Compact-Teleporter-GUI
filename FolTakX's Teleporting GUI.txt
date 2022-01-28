@@ -88,7 +88,7 @@ local function TeleportPlayerScript() -- TeleportUser.Script
 	local script = Instance.new('Script', TeleportUser)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(game.Workspace:WaitForChild(script.Parent.Parent.Text.Name).Head.Position)
+		game.Players.LocalPlayer.Character:MoveTo(game.Workspace[script.Parent.Parent.Text.Name].Head.Position)
 	end)
 end
 local function CloseGuiScript() -- Close.Script 
@@ -103,7 +103,7 @@ local function OpenGuiScript() -- Open.Script
 	local script = Instance.new('Script', Open)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Frame.Visible = true
 		script.Parent.Visible = false
+		script.Parent.Parent.Frame.Visible = true
 	end)
 end
