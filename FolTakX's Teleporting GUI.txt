@@ -9,7 +9,7 @@ local Open = Instance.new("TextButton")
 --Properties:
 
 FolTakXsTeleporterGui.Name = "FolTakXsTeleporterGui"
-FolTakXsTeleporterGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+FolTakXsTeleporterGui.Parent = game.Players.LocalPlayer.PlayerGui
 FolTakXsTeleporterGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = FolTakXsTeleporterGui
